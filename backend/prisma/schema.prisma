@@ -1,0 +1,93 @@
+// =============================================================================
+// schema.prisma — Sistema de Moeda Estudantil
+// Lab03S02 — Modelo ER + Estratégia de Acesso via ORM (Prisma + PostgreSQL)
+// =============================================================================
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// ---------------------------------------------------------------------------
+// ENUM — define os tipos de perfil de usuário no sistema
+// ---------------------------------------------------------------------------
+enum TipoPerfil {
+  ALUNO
+  PROFESSOR
+  EMPRESA
+}
+
+// ---------------------------------------------------------------------------
+// MODEL: Usuario
+// Tabela base de autenticação. Toda entidade (Aluno, Empresa) possui um
+// registro aqui. Estratégia de herança: tabela concreta por tipo (TPT).
+// ---------------------------------------------------------------------------
+model Usuario {
+  id_usuario  Int        @id @default(autoincrement())
+  email_login String     @unique
+  senha_hash  String
+  tipo_perfil TipoPerfil
+  ativo       Boolean    @default(true)
+  criado_em   DateTime   @default(now())
+
+  // Relações 1-para-1 opcionais (apenas um tipo existirá por usuario)
+  aluno   Aluno?
+  empresa EmpresaParceira?
+
+  @@map("usuarios")
+}
+
+// ---------------------------------------------------------------------------
+// MODEL: Aluno
+// Vincula-se a Usuario (1:1). Contém dados pessoais, endereço e saldo.
+// ---------------------------------------------------------------------------
+model Aluno {
+  id_aluno       Int     @id @default(autoincrement())
+  nome_completo  String
+  cpf            String  @unique
+  rg             String?
+
+  // Endereço
+  logradouro  String?
+  numero      String?
+  complemento String?
+  bairro      String?
+  cidade      String?
+  estado      String?
+  cep         String?
+
+  // Saldo em moedas estudantis
+  saldo_moedas Decimal @default(0.00) @db.Decimal(10, 2)
+
+  // Chaves estrangeiras
+  id_usuario     Int  @unique
+  id_instituicao Int?
+  id_curso       Int?
+
+  // Relação com a tabela base de usuário
+  usuario Usuario @relation(fields: [id_usuario], references: [id_usuario], onDelete: Cascade)
+
+  @@map("alunos")
+}
+
+// ---------------------------------------------------------------------------
+// MODEL: EmpresaParceira
+// Vincula-se a Usuario (1:1). Representa empresas que oferecem vantagens.
+// ---------------------------------------------------------------------------
+model EmpresaParceira {
+  id_empresa    Int     @id @default(autoincrement())
+  razao_social  String
+  nome_fantasia String?
+  cnpj          String  @unique
+  contato_nome  String?
+
+  // Chave estrangeira para a tabela base de usuário
+  id_usuario Int     @unique
+  usuario    Usuario @relation(fields: [id_usuario], references: [id_usuario], onDelete: Cascade)
+
+  @@map("empresas_parceiras")
+}
