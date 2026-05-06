@@ -23,7 +23,7 @@
 
 ---
 
-## 🚧 Status do Projeto
+## 🚧 Projeto em andamento
 
 [![Versão](https://img.shields.io/badge/Versão-v1.0.0-blue?style=for-the-badge)](https://github.com)
 ![Node.js](https://img.shields.io/badge/Node.js-20.x-007ec6?style=for-the-badge&logo=nodedotjs&logoColor=white)
