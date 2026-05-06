@@ -585,21 +585,8 @@ npm run test:integration
 
 ---
 
-## 🙏 Agradecimentos
-
-* [**Engenharia de Software PUC Minas**](https://www.instagram.com/engsoftwarepucminas/) — Pelo apoio institucional e pela excelente estrutura acadêmica.
-* [**Prof. Dr. João Paulo Aramuni**](https://github.com/joaopauloaramuni) — Pelos ensinamentos sobre Arquitetura de Software, Padrões de Projeto e pela elaboração das histórias de usuário e requisitos deste projeto.
-* [**Prisma Team**](https://www.prisma.io/) — Pela excelente documentação e pela DX (Developer Experience) do ORM.
-* [**Tailwind Labs**](https://tailwindcss.com/) — Pela abordagem utility-first que permitiu criar interfaces bonitas e responsivas com agilidade.
-
----
-
 ## 📄 Licença
 
 Este projeto é distribuído sob a **Licença MIT**.
 
 ---
-
-<div align="center">
-  <sub>Desenvolvido com 💙 para a disciplina de Laboratório de Desenvolvimento de Software — PUC Minas · Lab03S02</sub>
-</div>
