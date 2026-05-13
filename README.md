@@ -1,16 +1,18 @@
-<!-- Sistema de Moeda Estudantil — Lab03S02 — PUC Minas -->
+﻿<a href="https://classroom.github.com/online_ide?assignment_repo_id=99999999&assignment_repo_type=AssignmentRepo"><img src="https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg" width="200"/></a> <a href="https://classroom.github.com/open-in-codespaces?assignment_repo_id=99999999"><img src="https://classroom.github.com/assets/launch-codespace-2972f46106e565e64193e422d61a12cf1da4916b45550586e14ef0a7c637dd04.svg" width="250"/></a>
+
+---
 
 # 🪙 Sistema de Moeda Estudantil 👨‍💻
 
 > [!NOTE]
-> Plataforma acadêmica de **moeda virtual estudantil** desenvolvida para a disciplina de Laboratório de Desenvolvimento de Software (PUC Minas).
-> O sistema permite que professores recompensem alunos com moedas que podem ser trocadas por vantagens oferecidas por empresas parceiras.
+> Plataforma de **moeda virtual acadêmica** que estimula o mérito estudantil.  
+> Professores recompensam alunos com moedas virtuais que podem ser trocadas por vantagens (descontos e produtos) oferecidas por empresas parceiras.
 
 <table>
   <tr>
     <td width="800px">
       <div align="justify">
-        O <b>Sistema de Moeda Estudantil</b> é uma plataforma <i>fullstack</i> construída com <b>Node.js</b>, <b>TypeScript</b>, <b>Prisma ORM</b>, <b>PostgreSQL</b> e <b>React com TailwindCSS</b>. Esta iteração (<b>Lab03S02</b>) implementa o <i>Modelo Entidade-Relacionamento</i>, a <i>estratégia de acesso ao banco de dados via ORM</i> e os <b>CRUDs completos</b> (front-end e back-end) para as entidades <b>Aluno</b> e <b>Empresa Parceira</b>, seguindo rigorosamente a arquitetura <b>MVC</b>. O cadastro de qualquer entidade cria atomicamente um registro de usuário vinculado, garantindo <b>consistência transacional</b> no banco de dados. O projeto adota <i>Clean Code</i>, modularização clara e boas práticas de engenharia de software para fins acadêmicos e profissionais.
+        O <b>Sistema de Moeda Estudantil</b> é uma plataforma <i>fullstack</i> desenvolvida como projeto acadêmico da disciplina de <b>Laboratório de Desenvolvimento de Software</b> da <b>PUC Minas</b>. O objetivo é criar um ecossistema digital de reconhecimento do mérito estudantil: professores distribuem <i>moedas virtuais</i> aos seus alunos como forma de reconhecimento por bom comportamento e participação, e os alunos podem trocar essas moedas por vantagens (descontos, produtos, mensalidades) em <b>empresas parceiras</b> cadastradas. O sistema é construído com <b>Node.js</b>, <b>TypeScript</b>, <b>Prisma ORM</b>, <b>PostgreSQL</b> e <b>React com TailwindCSS</b>, seguindo rigorosamente a arquitetura <b>MVC</b>. A estratégia de acesso ao banco usa <i>transações atômicas</i> para garantir consistência, e as senhas são protegidas com <b>bcrypt</b>. O projeto adota <i>Clean Code</i>, modularização clara e boas práticas de engenharia de software.
       </div>
     </td>
     <td>
@@ -23,18 +25,20 @@
 
 ---
 
-## 🚧 Projeto em andamento
+## 🚧 Status do Projeto
 
-[![Versão](https://img.shields.io/badge/Versão-v1.0.0-blue?style=for-the-badge)](https://github.com)
-![Node.js](https://img.shields.io/badge/Node.js-20.x-007ec6?style=for-the-badge&logo=nodedotjs&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-5.4-007ec6?style=for-the-badge&logo=typescript&logoColor=white)
-![React](https://img.shields.io/badge/React-18.3-007ec6?style=for-the-badge&logo=react&logoColor=white)
-![Vite](https://img.shields.io/badge/Vite-5.2-007ec6?style=for-the-badge&logo=vite&logoColor=white)
-![Prisma](https://img.shields.io/badge/Prisma_ORM-5.13-007ec6?style=for-the-badge&logo=prisma&logoColor=white)
+[![Versão](https://img.shields.io/badge/Versão-v1.0.0-blue?style=for-the-badge)](https://github.com/Dolabelaa/trabalho-projetoSoftware3)
+![Node.js](https://img.shields.io/badge/Node.js-20.x_LTS-007ec6?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.4.5-007ec6?style=for-the-badge&logo=typescript&logoColor=white)
+![React](https://img.shields.io/badge/React-18.3.1-007ec6?style=for-the-badge&logo=react&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-5.2.13-007ec6?style=for-the-badge&logo=vite&logoColor=white)
+![Express](https://img.shields.io/badge/Express-4.19.2-007ec6?style=for-the-badge&logo=express&logoColor=white)
+![Prisma](https://img.shields.io/badge/Prisma_ORM-5.13.0-007ec6?style=for-the-badge&logo=prisma&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16-007ec6?style=for-the-badge&logo=postgresql&logoColor=white)
-![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.4-007ec6?style=for-the-badge&logo=tailwindcss&logoColor=white)
-![Express](https://img.shields.io/badge/Express-4.19-007ec6?style=for-the-badge&logo=express&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.4.4-007ec6?style=for-the-badge&logo=tailwindcss&logoColor=white)
 ![GitHub license](https://img.shields.io/badge/Licença-MIT-007ec6?style=for-the-badge&logo=opensourceinitiative)
+![GitHub stars](https://img.shields.io/github/stars/Dolabelaa/trabalho-projetoSoftware3?style=for-the-badge&logo=github)
+![GitHub last commit](https://img.shields.io/github/last-commit/Dolabelaa/trabalho-projetoSoftware3?style=for-the-badge&logo=clockify)
 
 ---
 
@@ -44,17 +48,28 @@
 - [Funcionalidades Principais](#-funcionalidades-principais)
 - [Tecnologias Utilizadas](#-tecnologias-utilizadas)
 - [Arquitetura](#-arquitetura)
+  - [Exemplos de diagramas](#exemplos-de-diagramas)
 - [Instalação e Execução](#-instalação-e-execução)
   - [Pré-requisitos](#pré-requisitos)
   - [Variáveis de Ambiente](#-variáveis-de-ambiente)
+    - [1 Back-end (Node.js + Express)](#1-back-end-nodejs--express)
+    - [2 Front-end (React, Vite)](#2-front-end-react-vite)
   - [Instalação de Dependências](#-instalação-de-dependências)
-  - [Inicialização do Banco de Dados](#-inicialização-do-banco-de-dados-postgresql)
+    - [Front-end (React)](#front-end-react)
+    - [Back-end (Node.js)](#back-end-nodejs)
+  - [Inicialização do Banco de Dados (PostgreSQL)](#-inicialização-do-banco-de-dados-postgresql)
   - [Como Executar a Aplicação](#-como-executar-a-aplicação)
+    - [Terminal 1: Back-end (Node.js + Express)](#terminal-1-back-end-nodejs--express)
+    - [Terminal 2: Front-end (React, Vite)](#terminal-2-front-end-react-vite)
+    - [Execução Local Completa com Docker Compose](#-execução-local-completa-com-docker-compose-incluindo-banco-de-dados)
+    - [Passos para build, inicialização e execução](#-passos-para-build-inicialização-e-execução)
+- [Deploy](#-deploy)
 - [Estrutura de Pastas](#-estrutura-de-pastas)
 - [Demonstração](#-demonstração)
-- [Endpoints da API](#-endpoints-da-api)
+  - [Aplicação Web](#-aplicação-web)
+  - [Exemplo de saída no Terminal (API)](#-exemplo-de-saída-no-terminal-para-back-end-api)
 - [Testes](#-testes)
-- [Documentações Utilizadas](#-documentações-utilizadas)
+- [Documentações utilizadas](#-documentações-utilizadas)
 - [Autores](#-autores)
 - [Contribuição](#-contribuição)
 - [Agradecimentos](#-agradecimentos)
@@ -63,213 +78,222 @@
 ---
 
 ## 🔗 Links Úteis
-
-* 🌐 **Demo Online:** *(em breve — deploy planejado na Vercel + Railway)*
-* 📖 **Documentação da API (Swagger):** `http://localhost:3333/api/health` *(disponível ao rodar localmente)*
+* 🌐 **Repositório:** [github.com/Dolabelaa/trabalho-projetoSoftware3](https://github.com/Dolabelaa/trabalho-projetoSoftware3)
+  > 💻 **Descrição:** Repositório principal do projeto com todo o histórico de commits por sprint.
+* 📖 **Health Check da API:** `http://localhost:3333/api/health`
+  > 📚 **Descrição:** Endpoint de verificação de saúde da API, disponível ao rodar a aplicação localmente.
 * 🎓 **Disciplina:** Laboratório de Desenvolvimento de Software — PUC Minas
-* 📋 **Iteração:** Lab03S02 — Modelo ER, ORM e CRUDs de Aluno e Empresa Parceira
 
 ---
 
 ## 📝 Sobre o Projeto
 
-O **Sistema de Moeda Estudantil** nasceu como um projeto acadêmico da disciplina de **Laboratório de Desenvolvimento de Software** da **PUC Minas**, com o objetivo de simular um ecossistema de recompensas entre alunos, professores e empresas parceiras.
+O **Sistema de Moeda Estudantil** nasceu como projeto acadêmico da disciplina de **Laboratório de Desenvolvimento de Software** da **PUC Minas**, com o objetivo de criar um ecossistema digital de reconhecimento do mérito estudantil.
 
 **Por que ele existe?**
-Professores precisam de um mecanismo digital para reconhecer e recompensar o desempenho e o mérito dos alunos. Empresas parceiras, por sua vez, desejam se conectar com o público universitário oferecendo benefícios. O sistema cria essa ponte de forma segura, rastreável e gamificada.
+Falta, no ambiente universitário, um mecanismo formal, digital e rastreável para que professores recompensem alunos pelo bom comportamento, participação em aula e dedicação. Ao mesmo tempo, empresas parceiras têm interesse em se conectar com o público universitário de forma relevante.
 
 **Qual problema ele resolve?**
-- Falta de um canal formal e digital para recompensas acadêmicas.
-- Dificuldade de empresas em alcançar o público universitário de forma relevante.
-- Ausência de rastreabilidade nas trocas de benefícios entre alunos e parceiros.
+- Professores não possuem um canal estruturado para reconhecer e recompensar o mérito estudantil.
+- Alunos não têm forma de converter seu esforço em benefícios concretos.
+- Empresas carecem de um canal direto e contextualizado para oferecer vantagens ao público universitário.
 
-**Contexto — Lab03S02:**
-Esta iteração foca especificamente na implementação do **Modelo ER**, na definição da estratégia de acesso ao banco de dados via **Prisma ORM** e na construção dos **CRUDs completos** para as entidades **Aluno** e **Empresa Parceira**, incluindo a tela de cadastro no front-end e a comunicação com o back-end via API RESTful.
+**Como funciona?**
+A cada semestre, professores recebem 1.000 moedas virtuais para distribuir a alunos. Alunos acumulam moedas e as trocam por vantagens (descontos, produtos, bolsas) no catálogo das empresas parceiras.
+
+**Contexto — Release 1 (Lab03S01 a Lab03S03):**
+Esta primeira release cobre a modelagem do sistema (Casos de Uso, Histórias de Usuário, Diagrama de Classes e Componentes), a implementação do banco de dados via ORM e os CRUDs completos de **Aluno** e **Empresa Parceira**, com front-end e back-end totalmente integrados.
 
 > [!NOTE]
-> Esta seção será expandida a cada iteração do laboratório, adicionando novas funcionalidades como autenticação JWT, lançamento de moedas por professores e catálogo de vantagens das empresas.
+> As funcionalidades de autenticação JWT, lançamento de moedas por professores, catálogo de vantagens e sistema de cupons serão implementadas nas releases futuras.
 
 ---
 
 ## ✨ Funcionalidades Principais
 
-- 🎒 **Cadastro de Alunos:** Formulário multi-seções com dados pessoais, endereço completo e credenciais de acesso. Cria atomicamente o registro de autenticação (`Usuario`) e o perfil do aluno.
-- 🏢 **Cadastro de Empresas Parceiras:** Formulário elegante com dados corporativos (CNPJ, Razão Social, Nome Fantasia) e credenciais de acesso.
-- 🔐 **Gerenciamento de Usuários Base:** Toda entidade (Aluno ou Empresa) possui um registro vinculado na tabela `usuarios` com tipo de perfil (`ALUNO`, `PROFESSOR`, `EMPRESA`) e senha armazenada com **bcrypt**.
-- 📋 **CRUD Completo via API RESTful:** Criação, listagem, busca por ID, atualização e remoção de Alunos e Empresas, com respostas padronizadas em JSON.
-- ✅ **Validação em Duas Camadas:** Client-side (React) e server-side (middlewares Express), com feedback de erro campo a campo no formulário.
-- 🔔 **Toast Notifications:** Feedback visual instantâneo de sucesso ou erro após cada operação, com animação de entrada e saída.
-- 🧱 **Arquitetura MVC:** Separação clara de responsabilidades entre Controllers, Services e a camada de dados (Prisma).
-- 💳 **Saldo de Moedas:** Campo `saldo_moedas` no perfil do Aluno, pronto para as próximas iterações do sistema.
+- 🎒 **Cadastro de Alunos:** Formulário multi-seções com dados pessoais, endereço completo e credenciais de acesso. Cria atomicamente o registro de autenticação (`Usuario`) e o perfil do aluno em uma única transação de banco.
+- 🏢 **Cadastro de Empresas Parceiras:** Formulário com dados corporativos (CNPJ, Razão Social, Nome Fantasia, Contato) e credenciais de acesso.
+- 📋 **CRUD Completo de Alunos e Empresas:** Criação, listagem, busca por ID, atualização parcial e exclusão lógica (soft delete via `ativo = false`).
+- 🔍 **Listagem e Gerenciamento:** Telas dedicadas para visualizar, editar e desativar alunos e empresas, com modais de edição e confirmação de ações destrutivas.
+- 🔐 **Senha Segura com bcrypt:** Todas as senhas são armazenadas como hash (bcrypt, custo 10), nunca em texto puro.
+- 🗑️ **Exclusão Lógica (Soft Delete):** Registros nunca são deletados fisicamente do banco — apenas desativados, preservando histórico e consistência referencial.
+- ✅ **Validação em Duas Camadas:** Middleware server-side com Zod (formato de e-mail, CPF com 11 dígitos, CNPJ com 14 dígitos, senha mínima de 6 caracteres) e validação client-side nos formulários React.
+- 🔔 **Toast Notifications:** Feedback visual instantâneo de sucesso ou erro após cada operação, com animação de entrada e saída e auto-dismiss.
+- 💳 **Saldo de Moedas:** Campo `saldo_moedas` no perfil do Aluno, pronto para as próximas iterações do sistema de transações.
 
 ---
 
 ## 🛠 Tecnologias Utilizadas
 
+As seguintes ferramentas, frameworks e bibliotecas foram utilizados na construção deste projeto.
+
 ### 💻 Front-end
 
-| Tecnologia | Versão | Finalidade |
-|:-----------|:-------|:-----------|
-| **React** | 18.3.x | Biblioteca principal de UI |
-| **TypeScript** | 5.4.x | Tipagem estática |
-| **TailwindCSS** | 3.4.x | Estilização utilitária |
-| **React Router DOM** | 6.x | Roteamento client-side |
-| **Axios** | 1.7.x | Cliente HTTP para consumo da API |
-| **Vite** | 5.2.x | Build tool e servidor de desenvolvimento |
+* **Framework/Biblioteca:** React v18.3.1
+* **Linguagem:** TypeScript 5.4.5
+* **Estilização:** Tailwind CSS 3.4.4
+* **Roteamento:** React Router DOM v6.23.1
+* **Cliente HTTP:** Axios 1.7.2
+* **Build Tool:** Vite 5.2.13
 
 ### 🖥️ Back-end
 
-| Tecnologia | Versão | Finalidade |
-|:-----------|:-------|:-----------|
-| **Node.js** | 20.x (LTS) | Runtime JavaScript |
-| **TypeScript** | 5.4.x | Tipagem estática |
-| **Express** | 4.19.x | Framework HTTP / API REST |
-| **Prisma ORM** | 5.13.x | Mapeamento objeto-relacional e migrations |
-| **PostgreSQL** | 16.x | Banco de dados relacional |
-| **bcryptjs** | 2.4.x | Hash seguro de senhas |
-| **dotenv** | 16.x | Gerenciamento de variáveis de ambiente |
-| **cors** | 2.8.x | Cross-Origin Resource Sharing |
+* **Runtime:** Node.js v20.x (LTS)
+* **Linguagem:** TypeScript 5.4.5
+* **Framework:** Express 4.19.2
+* **Banco de Dados:** PostgreSQL 16
+* **ORM:** Prisma 5.13.0 (migrations, type-safe queries, Prisma Studio)
+* **Hash de Senhas:** bcryptjs 2.4.3
+* **Validação:** Zod 4.4.3 (schemas + middleware)
+* **Variáveis de Ambiente:** dotenv 16.4.5
+* **CORS:** cors 2.8.5
+* **Dev Server:** ts-node-dev 2.0.0 (hot reload)
 
-### ⚙️ Infraestrutura & Dev
+### ⚙️ Infraestrutura & DevOps
 
-| Tecnologia | Finalidade |
-|:-----------|:-----------|
-| **Docker** | Containerização do PostgreSQL |
-| **ts-node-dev** | Hot reload no desenvolvimento |
-| **Prisma Studio** | Interface visual para o banco de dados |
+* **Containerização:** Docker (para o banco de dados PostgreSQL em desenvolvimento)
+* **CI/CD:** Git + GitHub
 
 ---
 
 ## 🏗 Arquitetura
 
-O sistema adota a **arquitetura MVC (Model-View-Controller)** com uma camada de **Service** intermediária, separando completamente as responsabilidades:
+O sistema adota a **arquitetura MVC (Model-View-Controller)** com uma camada de **Service** intermediária entre o Controller e o banco de dados, isolando completamente as regras de negócio.
 
+**Fluxo de uma requisição:**
 ```
 Requisição HTTP
       │
       ▼
- [ Middleware ]        ← Validação de campos obrigatórios, formato CPF/CNPJ
-      │
+ [ validarSchema ]     ← Middleware Zod: valida tipos, formatos (e-mail, CPF, CNPJ) e
+      │                  normaliza dados (strip de máscara). Retorna 422 se inválido.
       ▼
- [ Controller ]        ← Extrai dados do Request, retorna Response HTTP
-      │
+ [ Controller ]        ← Extrai dados do Request, aciona o Service e retorna a Response
+      │                  com o status HTTP correto. NÃO contém regras de negócio.
       ▼
-  [ Service ]          ← Regras de negócio, transações atômicas ($transaction)
-      │
+  [ Service ]          ← Regras de negócio, verificação de duplicidade (CPF, CNPJ, e-mail)
+      │                  e transações atômicas (prisma.$transaction).
       ▼
- [ Prisma ORM ]        ← Acesso ao banco de dados (queries type-safe)
-      │
+ [ Prisma ORM ]        ← Acesso ao banco com queries fortemente tipadas.
+      │                  Inclui relações (include), filtros e ordenação.
       ▼
- [ PostgreSQL ]        ← Persistência dos dados
+ [ PostgreSQL ]        ← Persistência dos dados com integridade referencial.
 ```
 
-**Decisão arquitetural central — Herança de Tabelas (TPT):**
-A entidade `Usuario` é a tabela base de autenticação. `Aluno` e `EmpresaParceira` referenciam `Usuario` com uma relação 1-para-1 (`UNIQUE` em `id_usuario`). Isso permite que a lógica de login seja centralizada, independentemente do tipo de perfil.
+**Padrões de design adotados:**
+- **Service Layer:** Toda a lógica de negócio fica nos Services, separada do Controller.
+- **DTO (Data Transfer Object):** Interfaces TypeScript (`CriarAlunoDTO`, `AtualizarAlunoDTO`) definem os contratos de entrada de cada operação.
+- **Singleton:** O `PrismaClient` é exportado como instância única (`database.ts`) para evitar conexões redundantes.
+- **Table-Per-Type (TPT):** A tabela `usuarios` é a base de autenticação. `Aluno` e `EmpresaParceira` referenciam `Usuario` com relação 1-para-1 única.
+- **Soft Delete:** Exclusão lógica via `ativo = false` no `Usuario` vinculado, preservando histórico de transações futuras.
 
 **Atomicidade garantida:**
-O cadastro de qualquer entidade utiliza `prisma.$transaction()`. Se a criação do `Usuario` ou do `Aluno`/`Empresa` falhar por qualquer motivo, **toda a operação é revertida** (rollback automático), evitando registros órfãos no banco.
+O cadastro de qualquer entidade utiliza `prisma.$transaction()`. Se a criação do `Usuario` ou do `Aluno`/`EmpresaParceira` falhar, **toda a operação é revertida automaticamente**, evitando registros órfãos no banco.
 
-### Diagrama Entidade-Relacionamento (simplificado)
+### Exemplos de diagramas
 
-```
-┌─────────────────────┐       ┌─────────────────────────┐
-│      usuarios       │       │         alunos          │
-│─────────────────────│ 1   1 │─────────────────────────│
-│ id_usuario (PK)     │──────▶│ id_aluno (PK)           │
-│ email_login (UNIQUE)│       │ nome_completo           │
-│ senha_hash          │       │ cpf (UNIQUE)            │
-│ tipo_perfil (ENUM)  │       │ rg, logradouro, ...     │
-│ ativo               │       │ saldo_moedas            │
-│ criado_em           │       │ id_usuario (FK, UNIQUE) │
-└─────────────────────┘       │ id_instituicao (FK)     │
-          │                   │ id_curso (FK)           │
-          │ 1              1  └─────────────────────────┘
-          │
-          └──────────────────▶┌─────────────────────────┐
-                               │    empresas_parceiras   │
-                               │─────────────────────────│
-                               │ id_empresa (PK)         │
-                               │ razao_social            │
-                               │ nome_fantasia           │
-                               │ cnpj (UNIQUE)           │
-                               │ contato_nome            │
-                               │ id_usuario (FK, UNIQUE) │
-                               └─────────────────────────┘
-```
+Para melhor visualização e entendimento da estrutura do sistema, os diagramas principais estão organizados lado a lado.
+
+| Diagrama de Arquitetura | Detalhe da Arquitetura |
+| :---: | :---: |
+| **Visão Geral (Macro)** | **Fluxo MVC de uma Requisição** |
+| <img src="https://joaopauloaramuni.github.io/image/aramunilogo.png" alt="Diagrama de Visão Geral do Sistema" width="120px" height="120px"> | <img src="https://joaopauloaramuni.github.io/image/aramunilogo.png" alt="Fluxo MVC" width="120px" height="120px"> |
+| **Modelo de Dados (Entidades)** | **Diagrama de Componentes** |
+| <img src="https://joaopauloaramuni.github.io/image/aramunilogo.png" alt="Diagrama Entidade-Relacionamento" width="120px" height="120px"> | <img src="https://joaopauloaramuni.github.io/image/aramunilogo.png" alt="Diagrama de Componentes" width="120px" height="120px"> |
+| **Diagrama de Casos de Uso** | **Diagrama de Classes** |
+| <img src="https://joaopauloaramuni.github.io/image/aramunilogo.png" alt="Diagrama de Casos de Uso" width="120px" height="120px"> | <img src="https://joaopauloaramuni.github.io/image/aramunilogo.png" alt="Diagrama de Classes" width="120px" height="120px"> |
+
+> [!NOTE]
+> Substitua as imagens acima pelas capturas reais dos diagramas UML produzidos nas sprints iniciais do projeto.
 
 ---
 
 ## 🔧 Instalação e Execução
 
 ### Pré-requisitos
+Certifique-se de que o seu ambiente possui as seguintes ferramentas instaladas:
 
-Certifique-se de ter o ambiente configurado com as seguintes ferramentas:
-
-* **Node.js:** versão **20.x (LTS)** ou superior
-* **npm:** versão **10.x** ou superior (incluso com o Node.js)
-* **PostgreSQL:** versão **16.x** — localmente ou via **Docker** *(recomendado)*
-* **Docker** *(opcional, mas recomendado para o banco de dados)*
+* **Node.js:** Versão **20.x (LTS)** ou superior (Necessário para o **Back-end** e **Front-end**)
+* **npm:** Versão **10.x** ou superior (incluso com o Node.js)
+* **PostgreSQL:** Versão **16.x** — instalado localmente ou via **Docker**
+* **Docker** (Opcional, mas **altamente recomendado** para rodar o Banco de Dados)
 * **Git**
 
 ---
 
 ### 🔑 Variáveis de Ambiente
 
-#### Back-end (Node.js + Express)
+Crie arquivos `.env` específicos para cada parte da aplicação.
 
-Crie um arquivo **`.env`** dentro da pasta `/backend` (baseado no `.env.example` incluído):
+#### 1 Back-end (Node.js + Express)
+
+Crie um arquivo **`.env`** na raiz da pasta `/backend`:
 
 | Variável | Descrição | Exemplo |
-|:---------|:----------|:--------|
-| `DATABASE_URL` | String de conexão do PostgreSQL (formato Prisma) | `postgresql://postgres:senha@localhost:5432/moeda_estudantil` |
-| `PORT` | Porta em que o servidor Express irá rodar | `3333` |
+| :--- | :--- | :--- |
+| `DATABASE_URL` | String de conexão do PostgreSQL para o Prisma | `postgresql://postgres:senha@localhost:5432/moeda_estudantil` |
+| `PORT` | Porta onde o servidor Express será executado | `3333` |
+| `FRONTEND_URL` | URL do front-end para configuração do CORS | `http://localhost:5173` |
 
 ```env
 # backend/.env
 DATABASE_URL="postgresql://postgres:sua_senha@localhost:5432/moeda_estudantil"
 PORT=3333
+FRONTEND_URL="http://localhost:5173"
 ```
 
-#### Front-end (React + Vite)
+#### 2 Front-end (React, Vite)
 
-O front-end utiliza o **proxy do Vite** configurado em `vite.config.ts` para redirecionar `/api` → `http://localhost:3333`. Em desenvolvimento, nenhuma variável de ambiente adicional é necessária.
+O front-end usa o **proxy do Vite** (`vite.config.ts`) para redirecionar `/api` → `http://localhost:3333` em desenvolvimento. Nenhuma variável adicional é necessária para rodar localmente.
 
-Para deploy em produção, crie um arquivo **`.env`** na pasta `/frontend`:
+Para **deploy em produção**, crie um arquivo **`.env`** na raiz da pasta `/frontend`:
 
 | Variável | Descrição | Exemplo |
-|:---------|:----------|:--------|
+| :--- | :--- | :--- |
 | `VITE_API_URL` | URL base da API em produção | `https://meu-backend.railway.app` |
+
+> **Obs:** As variáveis em projetos **Vite** precisam começar com `VITE_` para serem incluídas no *bundle* do front-end; variáveis sem esse prefixo não ficam disponíveis no código do cliente.
 
 ---
 
 ### 📦 Instalação de Dependências
 
-1. **Clone o repositório:**
+Clone o repositório e instale as dependências.
+
+1. **Clone o Repositório:**
 
 ```bash
-git clone <URL_DO_SEU_REPOSITÓRIO>
-cd "atividade - puc"
+git clone https://github.com/Dolabelaa/trabalho-projetoSoftware3.git
+cd trabalho-projetoSoftware3
 ```
 
-2. **Instale as dependências do Back-end:**
+2. **Instale as Dependências (Monorepo):**
+
+Como o projeto está dividido em `/frontend` e `/backend`, instale separadamente.
+
+#### Front-end (React)
+
+```bash
+cd frontend
+npm install
+cd ..
+```
+
+#### Back-end (Node.js)
 
 ```bash
 cd backend
 npm install
-```
-
-3. **Instale as dependências do Front-end:**
-
-```bash
-cd ../frontend
-npm install
+cd ..
 ```
 
 ---
 
 ### 💾 Inicialização do Banco de Dados (PostgreSQL)
 
-**Opção 1 — Docker (recomendado):**
+O projeto utiliza **PostgreSQL**. A forma mais fácil de inicializar o banco é via Docker:
+
+1. **Rode o Container do PostgreSQL:**
 
 ```bash
 docker run --name moeda_estudantil_db \
@@ -280,29 +304,32 @@ docker run --name moeda_estudantil_db \
   -d postgres:16
 ```
 
-**Opção 2 — PostgreSQL local:** Crie o banco de dados manualmente e aponte a `DATABASE_URL` no `.env`.
+2. **Configure o `.env`** do back-end com a `DATABASE_URL` correspondente.
 
-**Execute as migrations do Prisma** (cria todas as tabelas automaticamente):
+3. **Execute as migrations do Prisma** (cria todas as tabelas automaticamente):
 
 ```bash
 cd backend
 npx prisma migrate dev --name init
 ```
 
-**Gere o Prisma Client:**
+4. **Gere o Prisma Client:**
 
 ```bash
 npx prisma generate
 ```
 
 > [!NOTE]
-> Para inspecionar o banco visualmente, utilize o **Prisma Studio**: `npx prisma studio`
+> Para inspecionar o banco de dados visualmente via interface web, utilize o **Prisma Studio**:
+> ```bash
+> cd backend
+> npx prisma studio
+> ```
 
 ---
 
 ### ⚡ Como Executar a Aplicação
-
-Execute em **dois terminais separados**:
+Execute a aplicação em modo de desenvolvimento em **dois terminais separados**.
 
 #### Terminal 1: Back-end (Node.js + Express)
 
@@ -310,32 +337,123 @@ Execute em **dois terminais separados**:
 cd backend
 npm run dev
 ```
-
-🚀 *A API estará disponível em **http://localhost:3333***
+🚀 *O Back-end estará disponível em **http://localhost:3333***
 🏥 *Health check: **http://localhost:3333/api/health***
 
 ---
 
-#### Terminal 2: Front-end (React + Vite)
+#### Terminal 2: Front-end (React, Vite)
 
 ```bash
 cd frontend
 npm run dev
 ```
-
 🎨 *O Front-end estará disponível em **http://localhost:5173***
+
+---
+
+#### 🐳 Execução Local Completa com Docker Compose (Incluindo Banco de Dados)
+
+Para uma execução local que inclui o serviço de Back-end (**Node.js**), Front-end (**React**) e o banco de dados **PostgreSQL**, usaremos o **`docker-compose`** para orquestração.
+
+Antes de tudo, certifique-se de que o **Docker Desktop** (no Mac/Windows) ou o **serviço Docker** (em Linux) está em execução.
+
+- **No Mac/Windows**: basta abrir o aplicativo **Docker Desktop**.
+- **No Linux**: rode o comando abaixo para iniciar o serviço:
+
+```bash
+sudo systemctl start docker
+```
+
+---
+
+#### 📦 Passos para build, inicialização e execução
+
+1. Acesse a pasta raiz do projeto:
+
+```bash
+cd trabalho-projetoSoftware3
+```
+
+2. Suba todos os serviços:
+
+```bash
+docker-compose up --build -d
+```
+
+> [!NOTE]
+> 💡 O parâmetro `--build` garante que as imagens mais recentes do projeto sejam geradas, e `-d` executa em segundo plano.
+
+3. Verifique se os containers estão rodando:
+
+```bash
+docker ps
+```
+
+4. **Execute as Migrations do Banco de Dados** (apenas na primeira vez):
+
+```bash
+docker exec -it <nome_do_container_backend> npx prisma migrate deploy
+```
+
+5. Abra no navegador: **http://localhost:5173**
+
+6. Para parar e remover todos os containers:
+
+```bash
+docker-compose down
+```
+
+✅ **Em resumo:** Usar **`docker-compose`** simplifica a execução do ambiente completo, isolando as dependências de **Node.js** e garantindo que o PostgreSQL esteja disponível.
+
+---
+
+## 🚀 Deploy
+
+Instruções para build e deploy em produção.
+
+1. **Build do Projeto:**
+
+```bash
+# 1. Build do Front-end (React/Vite) — Gera a pasta /dist com arquivos estáticos
+cd frontend
+npm run build
+
+# 2. Build do Back-end (Node.js/TypeScript) — Transpila TS para JS na pasta /dist
+cd ../backend
+npm run build
+```
+
+2. **Configuração do Ambiente de Produção:** Defina as variáveis de ambiente no seu provedor (e.g., Railway, Render, Vercel, DigitalOcean).
+
+> 🔑 **Variáveis Cruciais:** Configure `DATABASE_URL` (apontando para o banco de produção, ex: Neon.tech ou Supabase) no Back-end e `VITE_API_URL` no Front-end.
+
+3. **Execução em Produção:**
+
+```bash
+# 🟢 Execução do Back-end (Node.js compilado)
+cd backend
+npx prisma migrate deploy   # Aplica migrations pendentes em produção
+npm start                   # Inicia: node dist/server.js
+
+# 🌐 Execução do Front-end (arquivos estáticos gerados pelo Vite)
+# Servido por Nginx, Vercel, Netlify, etc.
+# Para simular produção localmente:
+cd frontend
+npm run preview
+```
 
 ---
 
 ## 📂 Estrutura de Pastas
 
 ```
-atividade - puc/
+trabalho-projetoSoftware3/
 │
 ├── README.md                          # 📘 Documentação principal do projeto
 │
 ├── /backend                           # 📁 API RESTful — Node.js + Express + TypeScript
-│   ├── .env.example                   # 🧩 Exemplo de variáveis de ambiente
+│   ├── .env                           # 🔒 Variáveis de ambiente (não versionado)
 │   ├── package.json                   # 📦 Dependências e scripts npm
 │   ├── tsconfig.json                  # ⚙️ Configuração do TypeScript
 │   │
@@ -343,7 +461,7 @@ atividade - puc/
 │   │   └── schema.prisma              # 🗄️ Modelo ER: Usuario, Aluno, EmpresaParceira
 │   │
 │   └── /src
-│       ├── server.ts                  # 🚀 Ponto de entrada — inicializa o Express
+│       ├── server.ts                  # 🚀 Ponto de entrada — configura e inicia o Express
 │       │
 │       ├── /config
 │       │   └── database.ts            # 🔌 Singleton do PrismaClient
@@ -361,58 +479,64 @@ atividade - puc/
 │       │   └── empresaRoutes.ts       #    GET/POST/PUT/DELETE /api/empresas
 │       │
 │       └── /middlewares               # 🛡️ Middlewares de validação
-│           └── validationMiddleware.ts #   Valida campos obrigatórios e formatos
+│           └── validationMiddleware.ts #   Zod schemas + fábrica validarSchema()
 │
 └── /frontend                          # 📁 SPA — React + TypeScript + TailwindCSS
     ├── index.html                     # 🌐 Ponto de entrada HTML
     ├── package.json                   # 📦 Dependências e scripts npm
     ├── tsconfig.json                  # ⚙️ Configuração do TypeScript
-    ├── vite.config.ts                 # ⚡ Configuração do Vite + proxy da API
+    ├── vite.config.ts                 # ⚡ Configuração do Vite + proxy /api → :3333
     ├── tailwind.config.js             # 🎨 Configuração do TailwindCSS
     ├── postcss.config.js              # 🔧 Configuração do PostCSS
     │
     └── /src
-        ├── main.tsx                   # 🚀 Ponto de entrada React
-        ├── App.tsx                    # 🗺️ Roteamento principal (React Router)
-        ├── index.css                  # 🎨 Estilos globais + classes Tailwind reutilizáveis
+        ├── main.tsx                   # 🚀 Ponto de entrada React (ReactDOM.createRoot)
+        ├── App.tsx                    # 🗺️ Roteamento principal + Navbar (React Router)
+        ├── index.css                  # 🎨 Estilos globais + classes utilitárias Tailwind
         │
         ├── /pages
-        │   └── Home.tsx               # 🏠 Página inicial com navegação entre cadastros
+        │   └── Home.tsx               # 🏠 Página inicial com cards de navegação
         │
         ├── /components                # 🧱 Componentes React
         │   ├── CadastroAluno.tsx      #    Formulário multi-seções de cadastro de aluno
         │   ├── CadastroEmpresa.tsx    #    Formulário de cadastro de empresa parceira
-        │   └── Toast.tsx              #    Sistema de notificações (hook + container)
+        │   ├── ListagemAlunos.tsx     #    Tabela de alunos com edição e desativação
+        │   ├── ListagemEmpresas.tsx   #    Tabela de empresas com edição e desativação
+        │   └── Toast.tsx              #    Sistema de notificações (hook useToast + container)
         │
         └── /services
-            └── api.ts                 # 🔌 Configuração do Axios + funções tipadas por endpoint
+            └── api.ts                 # 🔌 Axios config + funções tipadas por endpoint
 ```
 
 ---
 
 ## 🎥 Demonstração
 
+> [!WARNING]
+> Dê preferência a hospedar suas imagens em um **CDN** ou no **GitHub Pages** para garantir que elas carreguem rapidamente e não quebrem. Saiba mais sobre o GitHub Pages clicando [aqui](https://github.com/joaopauloaramuni/joaopauloaramuni.github.io).
+
 ### 🌐 Aplicação Web
 
 Para melhor visualização, as telas principais estão organizadas lado a lado.
 
-| Tela | Descrição |
+| Tela | Captura de Tela |
 | :---: | :---: |
 | **Página Inicial (Home)** | **Cadastro de Aluno** |
-| Painel de navegação com cards para acesso rápido a cada funcionalidade | Formulário multi-seções: Dados Pessoais, Endereço e Credenciais |
-| **Cadastro de Empresa Parceira** | **Toast de Sucesso / Erro** |
-| Formulário com dados corporativos, contato e credenciais de acesso | Notificação visual instantânea após cada operação |
+| <img src="https://joaopauloaramuni.github.io/image/aramunilogo.png" alt="Página Inicial" width="120px" height="120px"> | <img src="https://joaopauloaramuni.github.io/image/aramunilogo.png" alt="Cadastro de Aluno" width="120px" height="120px"> |
+| **Cadastro de Empresa Parceira** | **Listagem e Gestão de Alunos** |
+| <img src="https://joaopauloaramuni.github.io/image/aramunilogo.png" alt="Cadastro de Empresa" width="120px" height="120px"> | <img src="https://joaopauloaramuni.github.io/image/aramunilogo.png" alt="Listagem de Alunos" width="120px" height="120px"> |
+| **Modal de Edição** | **Listagem de Empresas Parceiras** |
+| <img src="https://joaopauloaramuni.github.io/image/aramunilogo.png" alt="Modal de Edição" width="120px" height="120px"> | <img src="https://joaopauloaramuni.github.io/image/aramunilogo.png" alt="Listagem de Empresas" width="120px" height="120px"> |
 
 > [!NOTE]
-> Adicione aqui capturas de tela ou GIFs das telas após rodar a aplicação localmente. Hospede as imagens no GitHub Pages ou em um CDN para garantir disponibilidade.
+> Substitua as imagens acima por capturas de tela reais da aplicação rodando localmente.
 
----
+### 💻 Exemplo de Saída no Terminal (para Back-end, API)
 
-### 💻 Exemplos de Saída na API (cURL)
-
-#### Cadastrar um Aluno
+#### 1. Demonstração da API (Exemplo com cURL)
 
 ```bash
+# Cadastrar um novo aluno
 curl -X POST http://localhost:3333/api/alunos \
   -H "Content-Type: application/json" \
   -d '{
@@ -420,18 +544,12 @@ curl -X POST http://localhost:3333/api/alunos \
     "senha": "senha123",
     "nome_completo": "João da Silva Pereira",
     "cpf": "12345678901",
-    "rg": "MG1234567",
-    "logradouro": "Rua das Flores",
-    "numero": "100",
-    "bairro": "São Lucas",
     "cidade": "Belo Horizonte",
-    "estado": "MG",
-    "cep": "31270010"
+    "estado": "MG"
   }'
 ```
 
-**Resposta esperada (201 Created):**
-
+**Saída Esperada (201 Created):**
 ```json
 {
   "sucesso": true,
@@ -442,122 +560,79 @@ curl -X POST http://localhost:3333/api/alunos \
     "cpf": "12345678901",
     "email_login": "joao.silva@aluno.puc.br",
     "tipo_perfil": "ALUNO",
-    "criado_em": "2026-05-06T12:00:00.000Z"
+    "criado_em": "2026-05-13T12:00:00.000Z"
   }
 }
 ```
 
 ---
 
-#### Cadastrar uma Empresa Parceira
+#### 2. Demonstração de Validação de Dados
 
 ```bash
-curl -X POST http://localhost:3333/api/empresas \
+# Tentativa com e-mail inválido e senha fraca
+curl -X POST http://localhost:3333/api/alunos \
   -H "Content-Type: application/json" \
-  -d '{
-    "email_login": "contato@techcorp.com.br",
-    "senha": "senha123",
-    "razao_social": "Tech Corp Soluções Ltda",
-    "nome_fantasia": "TechCorp",
-    "cnpj": "12345678000195",
-    "contato_nome": "Maria Souza"
-  }'
+  -d '{ "email_login": "emailinvalido", "senha": "123", "nome_completo": "A", "cpf": "123" }'
 ```
 
-**Resposta esperada (201 Created):**
-
-```json
-{
-  "sucesso": true,
-  "mensagem": "Empresa parceira cadastrada com sucesso!",
-  "dados": {
-    "id_empresa": 1,
-    "razao_social": "Tech Corp Soluções Ltda",
-    "cnpj": "12345678000195",
-    "email_login": "contato@techcorp.com.br",
-    "tipo_perfil": "EMPRESA",
-    "criado_em": "2026-05-06T12:01:00.000Z"
-  }
-}
-```
-
----
-
-#### Erro de validação (400 Bad Request)
-
+**Saída Esperada (422 Unprocessable Entity):**
 ```json
 {
   "sucesso": false,
-  "mensagem": "Dados inválidos. Verifique os campos obrigatórios.",
+  "mensagem": "Dados inválidos. Verifique os campos enviados.",
   "erros": [
-    "O campo \"email_login\" é obrigatório.",
-    "O campo \"cpf\" é obrigatório."
+    "E-mail com formato inválido.",
+    "A senha deve ter no mínimo 6 caracteres.",
+    "Nome completo é obrigatório.",
+    "CPF deve conter exatamente 11 dígitos numéricos."
   ]
 }
 ```
 
 ---
 
-## 🔌 Endpoints da API
-
-### Alunos — `/api/alunos`
-
-| Método | Rota | Descrição | Status de Sucesso |
-|:-------|:-----|:----------|:-----------------:|
-| `POST` | `/api/alunos` | Cadastra um novo aluno | `201 Created` |
-| `GET` | `/api/alunos` | Lista todos os alunos | `200 OK` |
-| `GET` | `/api/alunos/:id` | Busca aluno por ID | `200 OK` |
-| `PUT` | `/api/alunos/:id` | Atualiza dados do aluno | `200 OK` |
-| `DELETE` | `/api/alunos/:id` | Remove aluno e usuário vinculado | `200 OK` |
-
-### Empresas Parceiras — `/api/empresas`
-
-| Método | Rota | Descrição | Status de Sucesso |
-|:-------|:-----|:----------|:-----------------:|
-| `POST` | `/api/empresas` | Cadastra uma nova empresa | `201 Created` |
-| `GET` | `/api/empresas` | Lista todas as empresas | `200 OK` |
-| `GET` | `/api/empresas/:id` | Busca empresa por ID | `200 OK` |
-| `PUT` | `/api/empresas/:id` | Atualiza dados da empresa | `200 OK` |
-| `DELETE` | `/api/empresas/:id` | Remove empresa e usuário vinculado | `200 OK` |
-
-### Utilitários
-
-| Método | Rota | Descrição |
-|:-------|:-----|:----------|
-| `GET` | `/api/health` | Verifica se a API está operacional |
-
----
-
 ## 🧪 Testes
 
-### Executar os testes (a implementar nas próximas iterações)
+### Testes Manuais (via Prisma Studio)
 
 ```bash
-# Testes unitários dos Services
+cd backend
+npx prisma studio
+```
+
+*Abre uma interface web em **http://localhost:5555** com visualização e edição das tabelas.*
+
+### Testes Automatizados (planejados para releases futuras)
+
+```bash
+# Testes unitários dos Services (a implementar)
 cd backend
 npm run test
 
-# Testes de integração da API
+# Testes de integração da API (a implementar)
 npm run test:integration
 ```
 
+*Ferramentas planejadas: **Jest** (unitários) + **Supertest** (integração de endpoints).*
+
 > [!NOTE]
-> A implementação de testes automatizados (Jest + Supertest) está planejada para as próximas iterações do laboratório. Os endpoints foram testados manualmente via cURL e Postman durante o desenvolvimento desta iteração (Lab03S02).
+> Os endpoints foram testados manualmente via **cURL** e **Postman** durante o desenvolvimento da Release 1. A implementação de testes automatizados está prevista para as próximas releases.
 
 ---
 
-## 🔗 Documentações Utilizadas
+## 🔗 Documentações utilizadas
 
-* 📖 **Prisma ORM:** [Documentação Oficial do Prisma](https://www.prisma.io/docs)
-* 📖 **React:** [Documentação Oficial do React](https://react.dev/reference/react)
-* 📖 **TailwindCSS:** [Documentação Oficial do Tailwind](https://tailwindcss.com/docs)
-* 📖 **Express.js:** [Documentação Oficial do Express](https://expressjs.com/pt-br/)
-* 📖 **TypeScript:** [Manual do TypeScript](https://www.typescriptlang.org/docs/)
-* 📖 **Vite:** [Guia de Configuração do Vite](https://vitejs.dev/config/)
-* 📖 **Axios:** [Documentação do Axios](https://axios-http.com/ptbr/docs/intro)
-* 📖 **bcryptjs:** [bcryptjs no npm](https://www.npmjs.com/package/bcryptjs)
-* 📖 **React Router:** [Documentação do React Router v6](https://reactrouter.com/en/main)
-* 📖 **Conventional Commits:** [Padrão de mensagens de commit](https://www.conventionalcommits.org/en/v1.0.0/)
+* 📖 **ORM (Back-end):** [Documentação Oficial do **Prisma**](https://www.prisma.io/docs)
+* 📖 **Framework (Back-end):** [Documentação Oficial do **Express.js**](https://expressjs.com/pt-br/)
+* 📖 **Validação (Back-end):** [Documentação Oficial do **Zod**](https://zod.dev/)
+* 📖 **Framework/Biblioteca (Front-end):** [Documentação Oficial do **React**](https://react.dev/reference/react)
+* 📖 **Build Tool (Front-end):** [Guia de Configuração do **Vite**](https://vitejs.dev/config/)
+* 📖 **Estilização (Front-end):** [Documentação Oficial do **TailwindCSS**](https://tailwindcss.com/docs)
+* 📖 **Cliente HTTP (Front-end):** [Documentação do **Axios**](https://axios-http.com/ptbr/docs/intro)
+* 📖 **Roteamento (Front-end):** [Documentação do **React Router v6**](https://reactrouter.com/en/main)
+* 📖 **Linguagem:** [Manual do **TypeScript**](https://www.typescriptlang.org/docs/)
+* 📖 **Guia de Estilo:** [**Conventional Commits** (Padrão de Mensagens)](https://www.conventionalcommits.org/en/v1.0.0/)
 
 ---
 
@@ -565,10 +640,15 @@ npm run test:integration
 
 | 👤 Nome | 🖼️ Foto | :octocat: GitHub | 💼 LinkedIn | 📤 Gmail |
 |---------|----------|-----------------|-------------|-----------|
-| Lucas Dolabela | <div align="center"><img src="https://joaopauloaramuni.github.io/image/aramunilogo.png" width="70px" height="70px"></div> | <div align="center"><a href="https://github.com/lucas-dolabela"><img src="https://joaopauloaramuni.github.io/image/github6.png" width="50px" height="50px"></a></div> | <div align="center"><a href="https://www.linkedin.com/in/lucas-dolabela"><img src="https://joaopauloaramuni.github.io/image/linkedin2.png" width="50px" height="50px"></a></div> | <div align="center"><a href="mailto:lucas.dolabela@gmail.com"><img src="https://joaopauloaramuni.github.io/image/gmail3.png" width="50px" height="50px"></a></div> |
+| Lucas Dolabela  | <div align="center"><img src="https://joaopauloaramuni.github.io/image/aramunilogo.png" width="70px" height="70px"></div> | <div align="center"><a href="https://github.com/Dolabelaa"><img src="https://joaopauloaramuni.github.io/image/github6.png" width="50px" height="50px"></a></div> | <div align="center"><a href="https://www.linkedin.com/in/lucas-dolabela"><img src="https://joaopauloaramuni.github.io/image/linkedin2.png" width="50px" height="50px"></a></div> | <div align="center"><a href="mailto:dolabela.dev@gmail.com"><img src="https://joaopauloaramuni.github.io/image/gmail3.png" width="50px" height="50px"></a></div> |
+| Vinicius Zegarra  | <div align="center"><img src="https://joaopauloaramuni.github.io/image/aramunilogo.png" width="70px" height="70px"></div> | <div align="center"><a href="https://github.com/"><img src="https://joaopauloaramuni.github.io/image/github6.png" width="50px" height="50px"></a></div> | <div align="center"><a href="https://www.linkedin.com/"><img src="https://joaopauloaramuni.github.io/image/linkedin2.png" width="50px" height="50px"></a></div> | <div align="center"><a href="mailto:vinicius.zegarra@gmail.com"><img src="https://joaopauloaramuni.github.io/image/gmail3.png" width="50px" height="50px"></a></div> |
+| Davi Vinicius  | <div align="center"><img src="https://joaopauloaramuni.github.io/image/aramunilogo.png" width="70px" height="70px"></div> | <div align="center"><a href="https://github.com/"><img src="https://joaopauloaramuni.github.io/image/github6.png" width="50px" height="50px"></a></div> | <div align="center"><a href="https://www.linkedin.com/"><img src="https://joaopauloaramuni.github.io/image/linkedin2.png" width="50px" height="50px"></a></div> | <div align="center"><a href="mailto:davi.vinicius@gmail.com"><img src="https://joaopauloaramuni.github.io/image/gmail3.png" width="50px" height="50px"></a></div> |
+| Marcos Antunes  | <div align="center"><img src="https://joaopauloaramuni.github.io/image/aramunilogo.png" width="70px" height="70px"></div> | <div align="center"><a href="https://github.com/"><img src="https://joaopauloaramuni.github.io/image/github6.png" width="50px" height="50px"></a></div> | <div align="center"><a href="https://www.linkedin.com/"><img src="https://joaopauloaramuni.github.io/image/linkedin2.png" width="50px" height="50px"></a></div> | <div align="center"><a href="mailto:marcos.antunes@gmail.com"><img src="https://joaopauloaramuni.github.io/image/gmail3.png" width="50px" height="50px"></a></div> |
 
 > [!TIP]
-> 💡 **Dica:** Atualize a tabela com seu GitHub real, LinkedIn e e-mail de contato. Adicione também os demais membros do grupo, se houver.
+> 💡 **Dica:** Atualize os links de GitHub, LinkedIn e e-mail de cada autor com os dados reais. Prefira fotos profissionais de rosto na coluna de foto.
+
+*Estudantes de **Engenharia de Software** — PUC Minas*
 
 ---
 
@@ -578,15 +658,24 @@ npm run test:integration
 2. Crie uma branch para sua feature (`git checkout -b feature/minha-feature`).
 3. Commit suas mudanças (`git commit -m 'feat: Adiciona nova funcionalidade X'`). **(Utilize [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/))**
 4. Faça o `push` para a branch (`git push origin feature/minha-feature`).
-5. Abra um **Pull Request (PR)** com uma descrição clara da mudança.
+5. Abra um **Pull Request (PR)** com descrição clara da mudança.
 
 > [!IMPORTANT]
-> 📝 Siga os padrões de código já estabelecidos no projeto: nomenclatura em português para variáveis de domínio, comentários explicativos nas camadas de negócio e validação obrigatória em todos os endpoints de escrita.
+> 📝 **Regras:** Siga os padrões de código já estabelecidos no projeto: nomenclatura em português para variáveis de domínio, comentários explicativos nas camadas de negócio e validação obrigatória em todos os endpoints de escrita.
+
+---
+
+## 🙏 Agradecimentos
+
+Gostaria de agradecer aos seguintes canais e pessoas que foram fundamentais para o desenvolvimento deste projeto:
+
+* [**Engenharia de Software PUC Minas**](https://www.instagram.com/engsoftwarepucminas/) - Pelo apoio institucional, estrutura acadêmica e fomento à inovação e boas práticas de engenharia.
+* [**Prof. Dr. João Paulo Aramuni**](https://github.com/joaopauloaramuni) - Pelos valiosos ensinamentos sobre **Arquitetura de Software**, **Padrões de Projeto** e pela orientação durante todas as sprints do laboratório.
 
 ---
 
 ## 📄 Licença
 
-Este projeto é distribuído sob a **Licença MIT**.
+Este projeto é distribuído sob a **[Licença MIT](https://github.com/Dolabelaa/trabalho-projetoSoftware3/blob/main/LICENSE)**.
 
 ---
