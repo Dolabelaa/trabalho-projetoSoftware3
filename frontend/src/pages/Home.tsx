@@ -40,7 +40,7 @@ export default function Home() {
       {/* Hero */}
       <div className="max-w-5xl mx-auto px-4 pt-16 pb-12 text-center">
         <div className="inline-flex items-center gap-2 bg-blue-100 text-blue-700 text-xs font-semibold px-3 py-1 rounded-full mb-6">
-          <span>🎓</span> Lab03S02 — PUC Minas
+          <span>🎓</span> Lab03S03 — PUC Minas
         </div>
         <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight mb-4">
           Sistema de <span className="text-blue-600">Moeda Estudantil</span>
@@ -69,6 +69,22 @@ export default function Home() {
             descricao="Registre uma empresa parceira para que ela possa publicar vantagens e benefícios exclusivos para os alunos da rede."
             cor="bg-indigo-500"
             corBotao="bg-indigo-600 hover:bg-indigo-700"
+          />
+          <CardNavegacao
+            para="/alunos"
+            icone="📋"
+            titulo="Gerenciar Alunos"
+            descricao="Visualize, edite e desative alunos cadastrados. Tabela com busca e ações rápidas de edição e exclusão lógica."
+            cor="bg-teal-500"
+            corBotao="bg-teal-600 hover:bg-teal-700"
+          />
+          <CardNavegacao
+            para="/empresas"
+            icone="📊"
+            titulo="Gerenciar Empresas"
+            descricao="Visualize, edite e desative empresas parceiras. Gerencie dados de contato e credenciais de acesso com facilidade."
+            cor="bg-violet-500"
+            corBotao="bg-violet-600 hover:bg-violet-700"
           />
         </div>
 

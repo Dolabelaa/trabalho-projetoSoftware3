@@ -6,6 +6,8 @@ import { BrowserRouter, Routes, Route, Link, useLocation } from 'react-router-do
 import Home from './pages/Home';
 import CadastroAluno from './components/CadastroAluno';
 import CadastroEmpresa from './components/CadastroEmpresa';
+import ListagemAlunos from './components/ListagemAlunos';
+import ListagemEmpresas from './components/ListagemEmpresas';
 
 // ---------------------------------------------------------------------------
 // Barra de navegação superior
@@ -14,9 +16,11 @@ function Navbar() {
   const { pathname } = useLocation();
 
   const links = [
-    { para: '/', label: 'Início' },
-    { para: '/cadastro-aluno', label: 'Cadastro Aluno' },
-    { para: '/cadastro-empresa', label: 'Cadastro Empresa' },
+    { para: '/',                  label: 'Início' },
+    { para: '/cadastro-aluno',    label: 'Cadastro Aluno' },
+    { para: '/cadastro-empresa',  label: 'Cadastro Empresa' },
+    { para: '/alunos',            label: 'Alunos' },
+    { para: '/empresas',          label: 'Empresas' },
   ];
 
   return (
@@ -61,6 +65,8 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/cadastro-aluno" element={<CadastroAluno />} />
           <Route path="/cadastro-empresa" element={<CadastroEmpresa />} />
+          <Route path="/alunos" element={<ListagemAlunos />} />
+          <Route path="/empresas" element={<ListagemEmpresas />} />
           {/* Rota fallback */}
           <Route
             path="*"

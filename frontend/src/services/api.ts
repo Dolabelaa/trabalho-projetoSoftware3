@@ -59,6 +59,35 @@ export interface CadastrarEmpresaPayload {
 }
 
 // ---------------------------------------------------------------------------
+// Tipos de retorno para listagens (espelha o shape retornado pelo Prisma)
+// ---------------------------------------------------------------------------
+
+export interface UsuarioResumo {
+  id_usuario: number;
+  email_login: string;
+  ativo: boolean;
+  criado_em: string;
+}
+
+export interface AlunoListado {
+  id_aluno: number;
+  nome_completo: string;
+  cpf: string;
+  rg: string | null;
+  saldo_moedas: string;
+  usuario: UsuarioResumo;
+}
+
+export interface EmpresaListada {
+  id_empresa: number;
+  razao_social: string;
+  nome_fantasia: string | null;
+  cnpj: string;
+  contato_nome: string | null;
+  usuario: UsuarioResumo;
+}
+
+// ---------------------------------------------------------------------------
 // Endpoints de Aluno
 // ---------------------------------------------------------------------------
 
@@ -67,18 +96,21 @@ export const alunoService = {
   cadastrar: (payload: CadastrarAlunoPayload) =>
     api.post<ApiResponse>('/alunos', payload),
 
-  /** GET /api/alunos — Lista todos os alunos */
-  listar: () => api.get<ApiResponse>('/alunos'),
+  /** GET /api/alunos — Lista todos os alunos ativos */
+  listar: () => api.get<ApiResponse<AlunoListado[]>>('/alunos'),
 
   /** GET /api/alunos/:id — Busca aluno por ID */
-  buscarPorId: (id: number) => api.get<ApiResponse>(`/alunos/${id}`),
+  buscarPorId: (id: number) => api.get<ApiResponse<AlunoListado>>(`/alunos/${id}`),
 
-  /** PUT /api/alunos/:id — Atualiza aluno */
+  /** PUT /api/alunos/:id — Atualiza aluno (campos parciais) */
   atualizar: (id: number, payload: Partial<CadastrarAlunoPayload>) =>
     api.put<ApiResponse>(`/alunos/${id}`, payload),
 
-  /** DELETE /api/alunos/:id — Remove aluno */
-  deletar: (id: number) => api.delete<ApiResponse>(`/alunos/${id}`),
+  /**
+   * DELETE /api/alunos/:id — Desativação lógica (soft delete).
+   * O registro permanece no banco com `ativo = false`.
+   */
+  desativar: (id: number) => api.delete<ApiResponse>(`/alunos/${id}`),
 };
 
 // ---------------------------------------------------------------------------
@@ -90,18 +122,21 @@ export const empresaService = {
   cadastrar: (payload: CadastrarEmpresaPayload) =>
     api.post<ApiResponse>('/empresas', payload),
 
-  /** GET /api/empresas — Lista todas as empresas */
-  listar: () => api.get<ApiResponse>('/empresas'),
+  /** GET /api/empresas — Lista todas as empresas ativas */
+  listar: () => api.get<ApiResponse<EmpresaListada[]>>('/empresas'),
 
   /** GET /api/empresas/:id — Busca empresa por ID */
-  buscarPorId: (id: number) => api.get<ApiResponse>(`/empresas/${id}`),
+  buscarPorId: (id: number) => api.get<ApiResponse<EmpresaListada>>(`/empresas/${id}`),
 
-  /** PUT /api/empresas/:id — Atualiza empresa */
+  /** PUT /api/empresas/:id — Atualiza empresa (campos parciais) */
   atualizar: (id: number, payload: Partial<CadastrarEmpresaPayload>) =>
     api.put<ApiResponse>(`/empresas/${id}`, payload),
 
-  /** DELETE /api/empresas/:id — Remove empresa */
-  deletar: (id: number) => api.delete<ApiResponse>(`/empresas/${id}`),
+  /**
+   * DELETE /api/empresas/:id — Desativação lógica (soft delete).
+   * O registro permanece no banco com `ativo = false`.
+   */
+  desativar: (id: number) => api.delete<ApiResponse>(`/empresas/${id}`),
 };
 
 export default api;
